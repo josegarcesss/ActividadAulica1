@@ -35,7 +35,12 @@ public class Baraja {
      }  
     
     
-    
+    public void mostrarbaraja(){
+          System.out.println("Cartas en la baraja:");
+        for (Carta carta : maso) {
+            System.out.println("-"+carta);
+}
+}
 }
 
  

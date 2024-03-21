@@ -13,7 +13,7 @@ public class AA1 {
     baraja.barajar();
         System.out.println("Listo?");
     
-    
+    baraja.mostrarbaraja();
     }
 
 }
