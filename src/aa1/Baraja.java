@@ -4,12 +4,14 @@
  */
 package aa1;
 
+import java.util.Collections;
+import java.util.List;
+
 public class Baraja {
-    private Carta maso[];
+    private List<Carta> maso;
     private int cartasEnBaraja;
 
     public Baraja() {
-        maso= new Carta[40];
         rellenar();
         cartasEnBaraja=40;
     }
@@ -18,15 +20,25 @@ public class Baraja {
     
     private void rellenar(){
         String[] palos={"Espada","Basto","Oro","Copa"};
-        int cantCarta=0;
         for (String palo : palos) {
             for (int i = 0; i < 12; i++) {
                 if(i!=8 && i!=9){
-                    maso[cantCarta].setPalo(palo);
-                    maso[cantCarta].setNumero(i);                    
-                    cantCarta++;
+                    maso.add(new Carta(i,palo));                    
+
                 }
             }
         }
     }
+    
+    
+     public void barajar(){         
+         Collections.shuffle(maso);
+     }  
+    
+    
+    
 }
+
+ 
+
+
