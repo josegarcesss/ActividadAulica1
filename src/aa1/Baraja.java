@@ -15,8 +15,21 @@ public class Baraja {
         rellenar();
     }
     
-    public ArrayList<Carta> darCartas(){
-
+    public ArrayList<Carta> darCartas(int n){
+        ArrayList<Carta> cartasdadas= new ArrayList<>();          
+        if (n>maso.size()) {
+            System.out.println("Excede la cantidad de cartas disponibles!");   
+        }else{
+            for (int i = 0; i < n; i++) {
+                cartasdadas.add(maso.remove(i));
+            }
+            return(cartasdadas);
+        }
+        
+                
+        
+        
+        
         
         
     }
