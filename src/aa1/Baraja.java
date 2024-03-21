@@ -4,12 +4,12 @@
  */
 package aa1;
 
+import java.util.ArrayList;
 import java.util.Collections;
-import java.util.List;
 
 public class Baraja {
-    private List<Carta> maso;
-    private int cartasEnBaraja;
+    private final ArrayList<Carta> maso=new ArrayList<>();
+    private final int cartasEnBaraja;
 
     public Baraja() {
         rellenar();
@@ -23,8 +23,7 @@ public class Baraja {
         for (String palo : palos) {
             for (int i = 0; i < 12; i++) {
                 if(i!=8 && i!=9){
-                    maso.add(new Carta(i,palo));                    
-
+                    maso.add(new Carta(i+1,palo));             
                 }
             }
         }
