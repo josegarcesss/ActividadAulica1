@@ -23,16 +23,16 @@ public class Baraja {
             for (int i = 0; i < n; i++) {
                 cartasdadas.add(maso.remove(i));
             }
-            return(cartasdadas);
         }
-        
+                    return(cartasdadas);
+    }
                 
         
         
         
         
         
-    }
+    
     
     
     public int cartasDisponibles(){
