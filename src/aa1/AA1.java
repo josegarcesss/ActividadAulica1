@@ -11,12 +11,7 @@ public class AA1 {
         
     Baraja baraja= new Baraja();
     baraja.barajar();
-<<<<<<< HEAD
-        System.out.println("Listo?");
-    
-=======
     baraja.cartasMonton();
->>>>>>> 499c65161713e9733ff8dde65b7803cd101c0230
     baraja.mostrarbaraja();
     }
 
