@@ -9,7 +9,7 @@ import java.util.Collections;
 
 public class Baraja {
     private final ArrayList<Carta> maso=new ArrayList<>();
-    ArrayList<Carta> monton= new ArrayList<>();     
+ ArrayList<Carta> monton= new ArrayList<>();     
     public Baraja() {
         rellenar();
     }
