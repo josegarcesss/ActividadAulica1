@@ -17,7 +17,7 @@ public class Baraja {
     }
     
     public int cartasDisponibles(){
-        return(cartasEnBaraja);
+        return(maso.size());
     }
         
         
