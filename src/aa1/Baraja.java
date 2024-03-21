@@ -15,6 +15,10 @@ public class Baraja {
         rellenar();
         cartasEnBaraja=40;
     }
+    
+    public int cartasDisponibles(){
+        return(cartasEnBaraja);
+    }
         
         
     
