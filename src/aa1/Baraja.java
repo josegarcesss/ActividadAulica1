@@ -9,12 +9,18 @@ import java.util.Collections;
 
 public class Baraja {
     private final ArrayList<Carta> maso=new ArrayList<>();
-    private final int cartasEnBaraja;
+
 
     public Baraja() {
         rellenar();
-        cartasEnBaraja=40;
     }
+    
+    public ArrayList<Carta> darCartas(){
+
+        
+        
+    }
+    
     
     public int cartasDisponibles(){
         return(maso.size());
