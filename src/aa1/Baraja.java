@@ -9,22 +9,20 @@ import java.util.Collections;
 
 public class Baraja {
     private final ArrayList<Carta> maso=new ArrayList<>();
-    private final ArrayList<Carta> monton=new ArrayList<>();
-
+    ArrayList<Carta> monton= new ArrayList<>();     
     public Baraja() {
         rellenar();
     }
     
-    public ArrayList<Carta> darCartas(int n){
-        ArrayList<Carta> cartasdadas= new ArrayList<>();          
+    public ArrayList<Carta> darCartas(int n){         
         if (n>maso.size()) {
             System.out.println("Excede la cantidad de cartas disponibles!");   
         }else{
             for (int i = 0; i < n; i++) {
-                cartasdadas.add(maso.remove(i));
+                monton.add(maso.remove(i));
             }
         }
-                    return(cartasdadas);
+                    return(monton);
     }
     
     public int cartasDisponibles(){
@@ -50,11 +48,11 @@ public class Baraja {
      }  
     
         public void cartasMonton() {
-        if (maso.size() == 40) {
+        if (monton.size() == 40) {
             System.out.println("Aun no se saco ninguna carta");
         } else {
             System.out.println("Cartas en el monton:");
-            for (Carta carta : maso) {
+            for (Carta carta : monton) {
                 System.out.println("-"+carta);
             }
         }
