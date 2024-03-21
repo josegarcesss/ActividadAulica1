@@ -34,7 +34,16 @@ public class Baraja {
          Collections.shuffle(maso);
      }  
     
-    
+        public void cartasMonton() {
+        if (maso.size() == 40) {
+            System.out.println("Aun no se saco ninguna carta");
+        } else {
+            System.out.println("Cartas en el monton:");
+            for (Carta carta : maso) {
+                System.out.println("-"+carta);
+            }
+        }
+    }
     public void mostrarbaraja(){
           System.out.println("Cartas en la baraja:");
         for (Carta carta : maso) {
