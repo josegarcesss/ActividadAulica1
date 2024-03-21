@@ -9,7 +9,7 @@ import java.util.Collections;
 
 public class Baraja {
     private final ArrayList<Carta> maso=new ArrayList<>();
-
+    private final ArrayList<Carta> monton=new ArrayList<>();
 
     public Baraja() {
         rellenar();
@@ -26,14 +26,6 @@ public class Baraja {
         }
                     return(cartasdadas);
     }
-                
-        
-        
-        
-        
-        
-    
-    
     
     public int cartasDisponibles(){
         return(maso.size());
@@ -73,6 +65,16 @@ public class Baraja {
             System.out.println("-"+carta);
 }
 }
+    public Carta SiguienteCarta(){
+      if(maso.isEmpty()){
+          System.out.println("no hay mas cartas ");
+        return null;
+      }
+      Carta cartas=maso.remove(0);
+      monton.add(cartas);
+      return cartas; 
+    
+    }
 }
 
  

@@ -11,7 +11,9 @@ public class AA1 {
         
     Baraja baraja= new Baraja();
     baraja.barajar();
-    baraja.cartasMonton();
+   
+        System.out.println(baraja.SiguienteCarta());
+         baraja.cartasMonton();
     baraja.mostrarbaraja();
     }
 
